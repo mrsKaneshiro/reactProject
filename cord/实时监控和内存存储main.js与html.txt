@@ -1,0 +1,14 @@
+一、webpack实时监控的设置：
+这样就不需要每次改动代码执行npx webpack；
+	1. 安装依赖，命令 cnpm i webpack-dev-server -D
+	webpack-dev-server --open firefox --port 3000 --hot --host 127.0.0.1
+	2. package.json 的“script”中配置“dev”:"webpack-dev-server"
+	3. 执行 cnpm run dev 即可自动监控代码的改变并压缩
+使用这种方法在webpack.config.js中无需配置outfile
+因为这种会直接在当前的根目录下生成一个main.js文件
+看不见，因为存在了内存里
+
+二、把index.html也放到内存里
+这种可以直接通过localhost访问的，避免了直接从物理路径中打开
+	1. 安装cnpm i html-webpack-plugin -D 这个插件可以帮助我们做页面的托管
+	2. 配置 webpack.config.js

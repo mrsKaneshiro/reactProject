@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "发布生产环境": "dependencies生产环境",
+  "发布开发环境": "devDependencies开发环境",
+  "dependencies": {},
   "devDependencies": {
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.2",
+    "html-webpack-plugin": "^3.2.0"
   }
 }
