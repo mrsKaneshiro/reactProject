@@ -23,7 +23,7 @@ module.exports ={
         main:'./src/index.js'
     },
     output:{
-        //这个指定与不指定都是被压缩到了这个文件下面的
+        //这个指定与不指定都是被压缩到了这个文件下面的 也会默认生成个index.html
         filename:'./main.js'
     },
     //设置环境是开发还是生产
