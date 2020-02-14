@@ -21,4 +21,5 @@ const dog={
     name:"cindy",
     age:"14"
 }
+
 ReactDom.render(<Hello name={dog.name} ></Hello>,document.getElementById("app"))

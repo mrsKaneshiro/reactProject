@@ -21,7 +21,8 @@ module.exports ={
     entry:{
         //设置入口也可以不用设置; ./ 当前目录下找到src
         //main:'./src/index.js'
-        main:'./src/01.react组件创建与props.js'
+        //main:'./src/01.react组件创建与props.js'
+        main:'./src/02.第二种方式创建组件组件分离.js'
     },
     output:{
         //这个指定与不指定都是被压缩到了这个文件下面的 也会默认生成个index.html
@@ -44,5 +45,15 @@ module.exports ={
                 exclude:/node_modules/
             }
         ]
+    },
+    
+    resolve:{
+        alias:{
+            // 统一组件加载路径，方便组件的引用，绝对路径的字符串拼接
+            '@': path.join(__dirname,'./component'),
+        },
+        //resolve-extensions这个规则用于文件名的匹配，
+        //如果js为匹配，匹配jsx 而后匹配json
+        extensions:['.js','.jsx','.json']
     }
 }
