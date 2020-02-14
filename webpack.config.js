@@ -51,6 +51,7 @@ module.exports ={
         alias:{
             // 统一组件加载路径，方便组件的引用，绝对路径的字符串拼接
             '@': path.join(__dirname,'./component'),
+            'antd':path.join(__dirname,'./lib/antd.js'),
         },
         //resolve-extensions这个规则用于文件名的匹配，
         //如果js为匹配，匹配jsx 而后匹配json
