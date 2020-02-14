@@ -14,5 +14,11 @@ console.log('hhhh ngixe')
  * ---------权限系统是用的JSX
  */
 const reactH5 = React.createElement("h5",{"id":"1","title":"gaoxintest"},'这是一个h5')
-
-ReactDom.render(reactH5,document.getElementById("app"))
+//如果渲染JSX的语法，必须配置babel 转换语法。
+const reactJsx = (
+    <div>
+        <div>这部分使用JSX</div>
+        <div>使用babel解析的</div>
+    </div>
+)
+ReactDom.render(reactJsx,document.getElementById("app"))

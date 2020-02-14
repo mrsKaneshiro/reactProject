@@ -20,7 +20,8 @@ const htmlWebpackPlugin =new HtmlWebpackPlugin({
 module.exports ={
     entry:{
         //设置入口也可以不用设置; ./ 当前目录下找到src
-        main:'./src/index.js'
+        //main:'./src/index.js'
+        main:'./src/01.react组件创建与props.js'
     },
     output:{
         //这个指定与不指定都是被压缩到了这个文件下面的 也会默认生成个index.html
@@ -33,5 +34,15 @@ module.exports ={
     //插件引入使用
     plugins:[
         htmlWebpackPlugin
-    ]
+    ],
+    //其他模块的解析----------这部分配置不是很懂
+    module:{
+        rules:[
+            {
+                test:/\.js|.jsx$/,
+                use:'babel-loader',
+                exclude:/node_modules/
+            }
+        ]
+    }
 }
