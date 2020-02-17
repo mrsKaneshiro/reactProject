@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import Hello from '@/Hello'
-import './03.class使用.js' //没有暴露的对象直接import文件即可
+import './05.class继承' //没有暴露的对象直接import文件即可
 import  {Button} from 'antd'
 
 //import Antd from 'antd'
