@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Hello from '@/Hello'
-import './05.class继承' //没有暴露的对象直接import文件即可
+import Hello from './06.class创建组件' //没有暴露的对象直接import文件即可
 import  {Button} from 'antd'
 
 //import Antd from 'antd'
@@ -10,12 +9,7 @@ import  {Button} from 'antd'
 /*分割线，以下部分是引入测试的页面--------------------------------------------------- */
 const mainPageJsx=(
     <div>
-        <Hello></Hello>
-        <Button type="primary">Primary</Button>
-        <Button>Default</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="link">Link</Button>
+        <Hello name="传入属性" id="123"></Hello>
     </div>
 )
 /*分割线--------------------------------------------------------------------------- */
