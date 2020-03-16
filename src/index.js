@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import App from './antdTest' //没有暴露的对象直接import文件即可
-import  {Button} from 'antd'
+import App from './antd/01.Form' //没有暴露的对象直接import文件即可
 
 //import Antd from 'antd'
 //var Button = Antd.Button
