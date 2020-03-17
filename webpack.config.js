@@ -21,11 +21,10 @@ module.exports ={
     entry:{
         //设置入口也可以不用设置; ./ 当前目录下找到src
         main:'./src/index.js'
-        //main:'./src/01.react组件创建与props.js'
-        //main:'./src/02.第二种方式创建组件组件分离.js'
     },
     output:{
         //这个指定与不指定都是被压缩到了这个文件下面的 也会默认生成个index.html
+        //'./main.js' 是在内存中生成的，压缩到内存，index.html中可以不用引入这个JS
         filename:'./main.js'
     },
     //设置环境是开发还是生产
